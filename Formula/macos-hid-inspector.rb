@@ -1,15 +1,15 @@
 class MacosHidInspector < Formula
-  version '0.2.3'
+  version '0.2.4'
   homepage 'https://github.com/masawada/macos-hid-inspector'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/masawada/macos-hid-inspector/releases/download/v0.2.3/inspect-hid_v0.2.3_darwin_arm64.tar.gz'
-      sha256 '379881bbfd259281c41028073640fd64687f9a181c561f9d9ba1cd33b1062211'
+      url 'https://github.com/masawada/macos-hid-inspector/releases/download/v0.2.4/inspect-hid_v0.2.4_darwin_arm64.tar.gz'
+      sha256 '6134836af0b5d491d99d250dc74f8533fb1cb72cb9ea4a28583662ab5d74d94a'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/masawada/macos-hid-inspector/releases/download/v0.2.3/inspect-hid_v0.2.3_darwin_amd64.tar.gz'
-      sha256 '7aa7f7a1fdcd3344367f15d77720ff193a928a57e27c3a947ccb5718f41f197f'
+      url 'https://github.com/masawada/macos-hid-inspector/releases/download/v0.2.4/inspect-hid_v0.2.4_darwin_amd64.tar.gz'
+      sha256 '18fbccee416c4f5fff34e652e1e09bfb99a751ea7599dcabfb9f5141eabb05da'
     end
   end
 
