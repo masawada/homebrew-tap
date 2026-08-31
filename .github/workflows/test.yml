@@ -13,5 +13,10 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         git fetch origin main
-        git diff origin/main --name-only | fgrep .rb \
-        | xargs -n 1 brew install --build-from-source
+        tap_dir="$(brew --repository masawada/tap)"
+        mkdir -p "$(dirname "$tap_dir")"
+        ln -s "$PWD" "$tap_dir"
+        git diff origin/main --name-only -- 'Formula/*.rb' \
+        | while read -r formula; do
+            brew install --build-from-source "masawada/tap/$(basename "$formula" .rb)"
+          done
