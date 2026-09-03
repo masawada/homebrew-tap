@@ -20,3 +20,4 @@ $ brew install <formula>
 - [mdp](https://github.com/masawada/mdp)
 - [metsuke](https://github.com/masawada/metsuke)
 - [macos-hid-inspector](https://github.com/masawada/macos-hid-inspector)
+- [eda](https://github.com/masawada/eda)
