@@ -17,6 +17,7 @@ $ brew install <formula>
 
 ## Formulae
 
+- [eda](https://github.com/masawada/eda)
+- [macos-hid-inspector](https://github.com/masawada/macos-hid-inspector)
 - [mdp](https://github.com/masawada/mdp)
 - [metsuke](https://github.com/masawada/metsuke)
-- [macos-hid-inspector](https://github.com/masawada/macos-hid-inspector)
