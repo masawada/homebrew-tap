@@ -1,26 +1,26 @@
 class Mdp < Formula
-  version '0.4.2'
+  version '0.5.0'
   homepage 'https://github.com/masawada/mdp'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/masawada/mdp/releases/download/v0.4.2/mdp_0.4.2_darwin_arm64.tar.gz'
-      sha256 'b392c23811bf9727e528a6cd008a6e3c99de2e22bd2b5b7cf2f74c42e64aae59'
+      url 'https://github.com/masawada/mdp/releases/download/v0.5.0/mdp_0.5.0_darwin_arm64.tar.gz'
+      sha256 'd8ec20c463279597f54273efabaa2a537f9422e8ce7ad017fa2eeb49c85c6b1b'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/masawada/mdp/releases/download/v0.4.2/mdp_0.4.2_darwin_amd64.tar.gz'
-      sha256 '8648f6f180ce8475a0567be6682a64629e4a753fd872c4b2506b0bc97f64a59c'
+      url 'https://github.com/masawada/mdp/releases/download/v0.5.0/mdp_0.5.0_darwin_amd64.tar.gz'
+      sha256 '9339523646909d4f99432863269f552f0e23504de08447f7121f4949ee31e9e5'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/masawada/mdp/releases/download/v0.4.2/mdp_0.4.2_linux_arm64.tar.gz'
-      sha256 '4299079d7587477c3f1531a11d52bfa7e1d3f7f13f01f81d4954450edde17ce9'
+      url 'https://github.com/masawada/mdp/releases/download/v0.5.0/mdp_0.5.0_linux_arm64.tar.gz'
+      sha256 'b7dd012b191997d01fcb10543a43c41589cdbdc089196e21625d512ad4dd0cdd'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/masawada/mdp/releases/download/v0.4.2/mdp_0.4.2_linux_amd64.tar.gz'
-      sha256 'd9569620cd5be502b5004a2b6c1075738948e84d5cd808e40253772060b2b25f'
+      url 'https://github.com/masawada/mdp/releases/download/v0.5.0/mdp_0.5.0_linux_amd64.tar.gz'
+      sha256 '4e0d4a6c6f4a99f9a0099979940f1b049fc25e0e8c5c2eb3abc4b5134a37adfa'
     end
   end
 
